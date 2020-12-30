@@ -1,0 +1,26 @@
+.home .container-page {
+  margin-top: 45px;
+}
+.home .container-page .edit-channel {
+  color: #fff;
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 28px;
+}
+
+.home .container-page .input-wrapper {
+  display: flex;
+  margin-bottom: 10px;
+}
+.home .container-page .input-wrapper .input-title {
+  flex: 1;
+}
+
+.home .container-page .input-wrapper .input-attach {
+  max-width: 213px;
+  margin-left: 30px;
+}
+
+.home .container-page .input-video {
+  max-width: 179px;
+}

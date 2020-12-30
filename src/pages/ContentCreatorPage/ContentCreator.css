@@ -1,0 +1,59 @@
+.content-creator .image-wrapper {
+  width: 113%;
+  margin-left: -76px;
+}
+
+.content-creator .image-wrapper img {
+  width: 100%;
+  height: 200px;
+}
+
+.content-creator .link-profile-wrapper {
+  display: flex;
+  padding: 0;
+  padding: 19px 0 8px;
+  border-bottom: 2px solid #d2d2d2;
+  margin-bottom: 20px;
+}
+
+.content-creator .link-profile-wrapper span {
+  text-decoration: none;
+  margin-right: 21px;
+  font-size: 18;
+  font-weight: 600;
+}
+
+.content-creator .link-profile-wrapper span {
+  text-decoration: none;
+  margin-right: 21px;
+  font-size: 18;
+  font-weight: 600;
+  color: #d2d2d2;
+}
+
+.content-creator .link-profile-wrapper span.active {
+  color: #ff7a00;
+}
+
+.content-creator .link-profile-wrapper .link-profile {
+  cursor: pointer;
+}
+
+.skeleton .profile-skeleton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skeleton .profile-skeleton .skeleton-1 {
+  flex: auto;
+}
+
+.skeleton .profile-skeleton .skeleton-2 {
+  align-items: flex-end;
+}
+
+.skeleton .profile-skeleton .skeleton-thumbnail {
+  display: flex;
+  flex-direction: column;
+}

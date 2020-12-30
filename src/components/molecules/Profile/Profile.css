@@ -1,0 +1,40 @@
+.profile {
+  margin-top: 26px;
+}
+
+.profile .user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.profile .user-profile .channel-name {
+  margin-left: 23px;
+}
+
+.profile .user-profile .channel-name h6 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.profile .user-profile .channel-name p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #f0f0f0;
+  margin-bottom: 0;
+}
+
+.profile .user-profile .button-wrapper {
+  flex: 1;
+  text-align: end;
+}
+
+.profile .user-profile .button-wrapper .add-button {
+  font-size: 12px;
+}
+
+.button.button-subscribed {
+  background-color: #161616;
+  border: 2px solid #bcbcbc;
+  padding: 0;
+}

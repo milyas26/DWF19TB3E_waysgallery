@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  font-family: "Montserrat";
+  background-color: #000000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Landing Page */
+.page {
+  background-color: #000000;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.page .left {
+  color: white;
+  flex: 3;
+  width: 383px;
+}
+
+.page .left-content,
+.page .left-content img {
+  width: 450px;
+  margin: auto;
+  text-align: start;
+}
+
+.page .right {
+  flex: 2;
+  margin: auto;
+}
+
+/* End Landing Page */
+
+/* Home Page  */
+.home .container-page {
+  padding-right: 50px;
+  margin-left: 360px;
+}
+
+.home .container-homepageSkeleton {
+  margin-right: 30px;
+  align-items: center;
+  display: flex;
+}
+
+.home .container-homepageSkeleton .skeleton-1 {
+  max-width: 100%;
+  flex: 1;
+}
+/* End Home Page */
+
+.videos .thumbnail .thumbnail-wrapper {
+  width: 25%;
+}
+
+.videos .thumbnail.recomendation .thumbnail-wrapper {
+  width: 100%;
+}
+.videos h2 {
+  color: #fff;
+  font-weight: 24px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #d2d2d2;
+  margin-top: -25px;
+  display: inline-block;
+}
+
+.videos .thumbnail {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Subscription Page */
+
+.home .container-page .videos .subs-detail {
+  display: flex;
+  height: 65vh;
+  justify-content: center;
+  align-items: center;
+  border: none;
+}

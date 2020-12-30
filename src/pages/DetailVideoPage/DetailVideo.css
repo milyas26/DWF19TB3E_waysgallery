@@ -1,0 +1,91 @@
+.detail-video {
+  display: flex;
+}
+
+.details {
+  flex: 1;
+  margin-right: 30px;
+}
+
+.detail-video .recomendation {
+  max-width: 230px;
+}
+
+.detail-video .recomendation h4 {
+  color: #fff;
+  font-weight: 24px;
+  border-bottom: 2px solid #d2d2d2;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+
+.details .stats {
+  display: flex;
+  flex: 1;
+  margin-top: -15px;
+}
+
+.details .stats img {
+  width: 15px;
+}
+
+.details .stats span {
+  margin-right: 20px;
+  padding-left: 8px;
+  font-size: 12px;
+  color: #555555;
+}
+
+.detail-video .details h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.detail-video .details p {
+  color: #c2c1c1;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.detail-video .details .link-thumbnail {
+  display: inline-block;
+}
+.detail-video .details .link-thumbnail:hover {
+  text-decoration: none;
+}
+
+.detail-video .details .channel-prof {
+  display: flex;
+  flex-direction: row;
+  margin: 5px 0;
+  align-items: center;
+}
+
+.detail-video .details .channel-prof h5 {
+  margin-bottom: 0;
+  margin-left: 10px;
+  color: #d2d2d2;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.detail-video .details .stats {
+  padding: 20px 0;
+  border-bottom: 2px solid #d2d2d2;
+}
+
+.detail-video .details .comment {
+  display: flex;
+  margin-top: 20px;
+}
+.detail-video .details .comment .textarea {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.detail-video .details .comment-section .button-wrapper {
+  text-align: end;
+}

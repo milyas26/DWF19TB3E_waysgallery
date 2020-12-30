@@ -1,0 +1,26 @@
+.input-wrapper .input {
+  border: 2px solid #bcbcbc;
+  padding: 12px 12px;
+  border-radius: 8px;
+  outline: none;
+  color: #bcbcbc;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #2e2e2e;
+  font-size: 18px;
+  font-family: "Montserrat";
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.input-wrapper .input:hover {
+  -webkit-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  -moz-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  box-shadow: 0px 0px 1px 1px #bcbcbc;
+}
+
+.input-wrapper .input:focus {
+  -webkit-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  -moz-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  box-shadow: 0px 0px 1px 1px #bcbcbc;
+}

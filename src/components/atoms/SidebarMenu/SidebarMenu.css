@@ -1,0 +1,26 @@
+.wrapper-menu {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin-bottom: 25px;
+}
+
+.wrapper-menu img {
+  margin-right: 10px;
+  align-items: center;
+}
+
+.wrapper-menu p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.wrapper-menu .label.active {
+  color: #ff7a00;
+}
+
+.link-sidebar-menu:hover {
+  text-decoration: none;
+}

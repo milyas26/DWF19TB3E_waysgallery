@@ -1,0 +1,17 @@
+.sidebar-wrapper .link-sidebar:hover {
+  text-decoration: none;
+}
+
+.sidebar-wrapper .link-sidebar .show-more {
+  background-color: #555;
+  color: rgb(189, 186, 186) !important;
+  font-weight: 600;
+  margin-top: 20px !important;
+  padding: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+.sidebar-wrapper .link-sidebar .show-more:hover {
+  background-color: #ff7a00;
+  color: #fff !important;
+}

@@ -1,0 +1,107 @@
+.comments {
+  display: flex;
+  background-color: #151515;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  align-items: center;
+}
+
+.comments:hover {
+  background-color: #1f1e1e;
+}
+
+.comments .comment-detail {
+  width: 100%;
+  margin-left: 20px;
+}
+
+.comments .comment-detail .comment-link:hover {
+  text-decoration: none;
+}
+
+.comments .comment-detail .channel-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.comments .comment-detail .channel-name .link {
+  flex: auto;
+}
+
+.comments .comment-detail .channel-name .option {
+  flex: 1;
+  position: relative;
+}
+
+.comments .comment-detail .channel-name .option p {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-align: end;
+  font-size: 10px;
+  cursor: pointer;
+  font-weight: 900;
+  line-height: 0.5;
+}
+
+.comments .comment-detail .channel-name .option .dropdown {
+  flex-direction: column;
+  color: #fff;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  background-color: #000;
+  border-radius: 5px;
+  border: 2px solid #ff7a00;
+}
+
+.comments .comment-detail .channel-name .option .dropdown span {
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.comments .comment-detail .channel-name .option .dropdown span:hover {
+  background-color: #ff7a00;
+}
+
+.comments .comment-detail .channel-name .option .dropdown .delete {
+  color: red;
+}
+
+.comments .comment-detail .comment-channel {
+  color: #ff7a00;
+  margin-bottom: 0;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.comments .comment-detail .comment-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+
+.comments .comment-detail .comment-item {
+  margin-bottom: 0;
+  color: #fff;
+  font-size: 14px;
+  flex: auto;
+  width: 100%;
+}
+
+.comments .comment-detail .comment-date {
+  margin-bottom: 0;
+  font-size: 10px;
+  flex: 1;
+  margin-left: 10px;
+}
+
+.comments .comment-detail .button-wrapper {
+  display: flex;
+  text-align: end;
+  align-items: flex-end;
+}

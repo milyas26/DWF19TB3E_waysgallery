@@ -1,0 +1,31 @@
+.text-area {
+  width: 100%;
+  border: 2px solid #bcbcbc;
+  padding: 15px 12px;
+  border-radius: 8px;
+  outline: none;
+  min-height: 122px;
+  color: #bcbcbc;
+  box-sizing: border-box;
+  background-color: #2e2e2e;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  resize: none;
+}
+
+.text-area:hover {
+  -webkit-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  -moz-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  box-shadow: 0px 0px 1px 1px #bcbcbc;
+}
+
+.text-area:focus {
+  -webkit-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  -moz-box-shadow: 0px 0px 3px 1px #bcbcbc;
+  box-shadow: 0px 0px 1px 1px #bcbcbc;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}

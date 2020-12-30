@@ -1,0 +1,10 @@
+.skeleton .thumbnail-skeleton {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  justify-content: space-evenly;
+}
+
+.skeleton .thumbnail-skeleton .skeleton-item {
+  margin: 2px 5px;
+}

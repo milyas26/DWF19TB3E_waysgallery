@@ -1,0 +1,54 @@
+.watch-later {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #1b1b1b;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.watch-later:hover {
+  background-color: #4c5258;
+}
+
+.watch-later .photo-thumb img {
+  width: 130px;
+  height: 80px;
+  margin-right: 20px;
+}
+
+.watch-later .desc .title p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.watch-later .desc .title .stats {
+  display: flex;
+}
+
+.watch-later .desc .title .stats i {
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  color: rgb(209, 206, 206);
+}
+
+.watch-later .desc .title .stats span {
+  font-size: 14px;
+  color: rgb(209, 206, 206);
+}
+
+.watch-later .desc .title .stats .icon {
+  margin-right: 15px;
+}
+
+.watch-later .desc .title .stats .icon-later i {
+  color: #ff7a00;
+}
+
+.watch-later .desc .title .stats .icon-later i:hover {
+  color: rgb(209, 206, 206);
+}

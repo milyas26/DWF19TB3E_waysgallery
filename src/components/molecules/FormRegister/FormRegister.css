@@ -1,0 +1,28 @@
+.register {
+  background-color: #161616;
+  width: 416px;
+  border-radius: 10px;
+  padding: 40px 33px;
+  box-sizing: border-box;
+}
+
+.register .title {
+  font-family: "Montserrat";
+  color: #fff;
+  text-align: start;
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.register .error-register {
+  color: #fff;
+  top: 230px;
+}
+
+.register .error-register span {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(247, 29, 29);
+}
