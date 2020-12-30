@@ -1,13 +1,13 @@
 .text-area {
   width: 100%;
   border: 2px solid #bcbcbc;
-  padding: 15px 12px;
+  padding: 12px 10px;
   border-radius: 8px;
   outline: none;
   min-height: 122px;
-  color: #bcbcbc;
+  color: #000;
   box-sizing: border-box;
-  background-color: #2e2e2e;
+  background-color: #e7e7e7;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 18px;

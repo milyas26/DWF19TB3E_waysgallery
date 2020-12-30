@@ -1,0 +1,49 @@
+.home .filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.home .filter span {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home .filter span i {
+  margin-left: 10px;
+}
+
+.home .content .data-filter {
+  width: 120px;
+}
+
+.home .content .filter .dropdown-bar {
+  position: absolute;
+  top: 45px;
+  width: 120px;
+}
+
+.home .content {
+  text-align: left;
+}
+
+.home .content h4 {
+  margin: 44px 0;
+  font-weight: 600;
+}
+
+.home .content .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.content .cards .thumbnail-wrapper {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

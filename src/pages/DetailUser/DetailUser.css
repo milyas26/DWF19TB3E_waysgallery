@@ -1,0 +1,66 @@
+.container .content {
+  margin-bottom: 40px;
+}
+.container .content .arts {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.container .content .arts .left {
+  flex: 1;
+  text-align: left;
+}
+
+.container .content .arts .left .photo {
+  margin-bottom: 15px;
+}
+
+.container .content .arts .left span {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.container .content .arts .left p {
+  margin-top: 18px;
+  font-size: 38px;
+  width: 415px;
+  font-weight: 800;
+}
+
+.container .content .arts .left .buttons {
+  display: flex;
+  margin-top: 40px;
+}
+
+.container .content .arts .right {
+  flex: auto;
+  margin-top: 40px;
+}
+
+.container .content .arts .kotak {
+  background-color: #2fc4b2;
+  width: 300px;
+  height: 400px;
+  position: absolute;
+  z-index: -1;
+  right: 0;
+  top: -20px;
+}
+
+.content .posts h3 {
+  text-align: left;
+  margin: 50px 0 30px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.content .posts .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.content .posts .cards .thumbnail-wrapper {
+  margin-right: 5px;
+}

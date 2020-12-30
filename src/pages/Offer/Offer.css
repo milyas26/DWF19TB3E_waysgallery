@@ -1,0 +1,27 @@
+.content .filter.offer {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  width: 144px;
+}
+.content .filter.offer span {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  padding: 10px 22px;
+  border-radius: 5px;
+}
+
+.content .filter.offer span i {
+  margin-left: 10px;
+}
+
+.content .table {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(46, 45, 45);
+}

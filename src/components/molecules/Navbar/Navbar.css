@@ -1,0 +1,101 @@
+.header {
+  position: relative;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 20px 0;
+  border-bottom: 1px solid #e1e1e1;
+  align-items: center;
+}
+
+.header .logo {
+  flex: auto;
+  text-align: left;
+}
+.header .logo img {
+  width: 120px;
+}
+
+.header .right-header {
+  text-align: end;
+  align-items: center;
+}
+
+.header .right-header .img {
+  align-items: center;
+  display: flex;
+}
+
+.header .right-header img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-left: 30px;
+  cursor: pointer;
+}
+
+.header .dropdown-user {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  right: 10px;
+  bottom: -100px;
+  z-index: 999;
+  text-align: left;
+  background-color: #fff;
+  -webkit-box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 3px 8px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 1px 2px 1px rgba(97, 97, 97, 0.5);
+}
+
+.header .dropdown-user span {
+  padding: 10px 20px;
+  padding-right: 40px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.header .dropdown-user span:hover {
+  background-color: rgb(124, 122, 122);
+}
+
+.header .dropdown-user span:first-child i {
+  color: blue;
+}
+.header .dropdown-user span:nth-child(2) i {
+  color: green;
+}
+
+.header .dropdown-user span:last-child {
+  border-top: 2px solid#555;
+}
+
+.header .dropdown-user span:last-child i {
+  color: red;
+}
+
+.header .dropdown-user span i {
+  margin-right: 5px;
+}
+
+.header .login-button {
+  display: flex;
+  align-items: center;
+}
+
+.header .login-button h6 {
+  margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
+  margin-left: 10px;
+  color: #000;
+}
+
+.header .login-button-link {
+  color: #000;
+}
+
+.header .login-button-link:hover {
+  text-decoration: none;
+  color: #000;
+}

@@ -1,41 +1,31 @@
 .button {
-  padding: 12px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
+  padding: 8px 12px;
+  color: #000;
+  font-weight: 600;
+  font-size: 14px;
   border: none;
   outline: none;
-  background-color: #ff7a00;
+  background-color: #2fc4b2;
   border-radius: 8px;
-  height: 50px;
-  width: 100%;
+  width: 100px;
   cursor: pointer;
   font-family: "Montserrat";
-  font-weight: 600;
   -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
   -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 2px 3px 0px rgba(97, 97, 97, 0.5);
 }
 
 .button:hover {
-  background-color: #161616;
-  border: 2px solid #bcbcbc;
+  background-color: #555;
+  color: #fff;
 }
 
-.btn-sm {
-  height: 40px;
-  font-size: 16px;
-  width: 140px;
-  padding: 8px;
+.btn-secondary {
+  background-color: #e7e7e7;
 }
 
-.btn-sm:hover {
-  background-color: #000;
-  padding: 0;
-}
-
-.btn-sm.btn-subscribed {
-  background-color: #555555;
+.btn-secondary:hover {
+  background-color: #555;
 }
 
 .btn-add {
@@ -53,23 +43,4 @@
 
 .button-link:hover {
   text-decoration: none;
-}
-
-.buttons {
-  padding: 12px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  border: none;
-  outline: none;
-  background-color: #161616;
-  border-radius: 8px;
-  height: 50px;
-  width: 100%;
-  border: 2px solid #bcbcbc;
-  font-family: "Montserrat";
-  font-weight: 600;
-  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 2px 3px 0px rgba(97, 97, 97, 0.5);
 }

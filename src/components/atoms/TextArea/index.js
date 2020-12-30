@@ -1,10 +1,14 @@
 // CSS
 import './TextArea.css'
 
-const TextArea = ({ height, ...rest }) => {
+const TextArea = ({ height, fontSize, ...rest }) => {
   return (
     <div>
-      <textarea {...rest} className="text-area" style={{ height: height }} />
+      <textarea
+        {...rest}
+        className="text-area"
+        style={{ height: height, fontSize: fontSize }}
+      />
     </div>
   )
 }

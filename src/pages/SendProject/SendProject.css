@@ -1,0 +1,91 @@
+.send-project .edit-profile {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.send-project .left .kotak-file {
+  border: 4px dotted #555;
+  height: 350px;
+  width: 450px;
+}
+
+.send-project .left .kotak-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.send-project .left .kotak-file i {
+  font-size: 100px;
+}
+
+.send-project .left .kotak-file label {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.send-project .right {
+  flex-direction: columns;
+}
+
+.send-project .right .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+.send-project .right .avatar-file {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px dotted #555;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.send-project .right .avatar-file label {
+  font-size: 60px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.send-project .right .input-text {
+  width: 100%;
+}
+
+.send-project .right .buttons {
+  display: flex;
+}
+
+.send-project .upload-wrapper {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.message-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-wrapper .message {
+  background-color: #fff;
+  z-index: 99;
+  padding: 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #469f74;
+  font-weight: 500;
+}

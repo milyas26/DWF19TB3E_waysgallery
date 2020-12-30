@@ -19,6 +19,7 @@ const reducer = (state, action) => {
     case 'LOGIN':
       localStorage.setItem('token', action.payload.token)
       localStorage.setItem('id', action.payload.id)
+      localStorage.setItem('avatar', action.payload.avatar)
       return {
         ...state,
         isLogin: true,
@@ -27,6 +28,7 @@ const reducer = (state, action) => {
     case 'LOGOUT':
       localStorage.removeItem('token')
       localStorage.removeItem('id')
+      localStorage.removeItem('avatar')
       return {
         ...state,
         isLogin: false,

@@ -1,0 +1,38 @@
+.content .hire-wrapper {
+  margin: 0 200px;
+}
+
+.content .hire-wrapper .date-time {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .hire-wrapper .date-time .date {
+  width: 100%;
+}
+
+.content .hire-wrapper .buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.message-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-wrapper .message {
+  background-color: #fff;
+  z-index: 99;
+  padding: 30px;
+  border-radius: 8px;
+  font-size: 20px;
+  color: #469f74;
+  font-weight: 500;
+}

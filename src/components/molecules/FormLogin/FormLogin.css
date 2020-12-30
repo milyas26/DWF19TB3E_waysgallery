@@ -1,15 +1,19 @@
 .login {
-  background-color: #161616;
-  width: 450px;
+  background-color: #fff;
+  width: 416px;
   border-radius: 10px;
   padding: 40px 33px;
   box-sizing: border-box;
+  -webkit-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 3px 8px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 3px 0px rgba(97, 97, 97, 0.5);
 }
 
 .login .title {
   font-family: "Montserrat";
-  color: #fff;
+  color: #2fc4b2;
   text-align: start;
+  font-weight: 700;
   font-size: 36px;
   margin: 0;
   margin-bottom: 30px;
@@ -24,14 +28,4 @@
   font-size: 16px;
   font-weight: 500;
   color: rgb(247, 29, 29);
-  margin-top: 0;
-}
-
-.login .link-reset-password {
-  color: rgb(133, 131, 131);
-}
-
-.login .link-reset-password:hover {
-  color: #fff;
-  text-decoration: none;
 }

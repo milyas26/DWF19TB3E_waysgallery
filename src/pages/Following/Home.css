@@ -1,0 +1,45 @@
+.following .filter {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  position: relative;
+  font-weight: 500;
+}
+
+.following .filter span {
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.following .filter span i {
+  margin-left: 10px;
+}
+
+.following .content .filter .dropdown-bar {
+  position: absolute;
+  top: 45px;
+  width: 138px;
+}
+
+.following .content {
+  text-align: left;
+}
+
+.following .content h4 {
+  margin: 44px 0;
+  font-weight: 600;
+}
+
+.following .content .cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.content .cards .thumbnail-wrapper {
+  margin-right: 5px;
+  margin-bottom: 5px;
+}

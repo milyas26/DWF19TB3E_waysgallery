@@ -1,0 +1,65 @@
+.landing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 100vh;
+  width: 100vw;
+}
+
+.landing-page .left {
+  text-align: left;
+}
+
+.landing-page .left img {
+  width: 324px;
+}
+
+.landing-page .left h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #000;
+}
+
+.landing-page .left p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  max-width: 400px;
+}
+
+.landing-page .left .buttons {
+  display: flex;
+}
+
+.landing-page .right img {
+  width: 600px;
+}
+
+.landing-page .modal-landing {
+  position: absolute;
+  margin: auto;
+}
+
+.landing-page .images {
+  position: absolute;
+  z-index: -999;
+}
+
+.landing-page img.vector1 {
+  width: 400px;
+  position: absolute;
+  bottom: 0;
+  right: 290px;
+}
+.landing-page img.vector2 {
+  width: 400px;
+  position: absolute;
+  top: 82px;
+  right: 290px;
+}
+.landing-page img.vector3 {
+  width: 400px;
+  position: absolute;
+  top: 150px;
+  left: 290px;
+}

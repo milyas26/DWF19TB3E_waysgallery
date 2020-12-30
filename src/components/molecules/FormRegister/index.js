@@ -1,31 +1,28 @@
 // React Packages
 import { useContext, useState } from 'react'
+import { useHistory } from 'react-router-dom'
 
 // Components
 import Input from '../../atoms/Input'
 import Gap from '../../atoms/Gap'
 import Button from '../../atoms/Button'
-import TextArea from '../../atoms/TextArea'
 
 // CSS
 import './FormRegister.css'
 import { AppContext } from '../../../context/appContext'
-import { useHistory } from 'react-router-dom'
 import { API, setAuthToken } from '../../../config/api'
 
 const FormRegister = (props) => {
   const [state, dispatch] = useContext(AppContext)
-  const history = useHistory()
   const [invalidMessage, setInvalidMessage] = useState('')
+  const history = useHistory()
   const [formData, setFormData] = useState({
     email: '',
     password: '',
-    channelName: '',
-    description: '',
+    fullName: '',
   })
-  const [isRegister, setIsRegister] = useState(false)
 
-  const { email, password, channelName, description } = formData
+  const { email, password, fullName } = formData
 
   const handleChangeText = (e) => {
     setInvalidMessage('')
@@ -36,8 +33,7 @@ const FormRegister = (props) => {
     e.preventDefault()
 
     try {
-      setIsRegister(true)
-      const body = JSON.stringify({ email, password, channelName, description })
+      const body = JSON.stringify({ email, password, fullName })
 
       const config = {
         headers: {
@@ -45,26 +41,23 @@ const FormRegister = (props) => {
         },
       }
       const response = await API.post('/register', body, config)
-
       dispatch({
         type: 'LOGIN',
-        payload: response.data.data.channel,
+        payload: response.data.data.user,
       })
 
-      setAuthToken(response.data.data.channel.token)
-      setIsRegister(false)
+      setAuthToken(response.data.data.user.token)
+
       history.push('/home')
     } catch (err) {
       console.log(err)
       setInvalidMessage(err.response.data.error.message)
-      setIsRegister(false)
     }
   }
-
   return (
     <div className="register">
       <form>
-        <h1 className="title">Sign Up</h1>
+        <h1 className="title">Register</h1>
         <div className="error-register">
           <span style={{ display: invalidMessage ? '' : 'none' }}>
             {invalidMessage} <i className="fas fa-times"></i>
@@ -72,43 +65,44 @@ const FormRegister = (props) => {
         </div>
         <Input
           id="email"
-          onChange={handleChangeText}
           placeholder="Email"
           name="email"
+          onChange={handleChangeText}
           value={email}
         />
         <Gap height={20} />
         <Input
           id="password"
-          onChange={handleChangeText}
           placeholder="Password"
           type="password"
           name="password"
           value={password}
+          onChange={handleChangeText}
         />
         <Gap height={20} />
         <Input
-          id="namaChannel"
+          id="fullName"
+          placeholder="Full Name"
+          name="fullName"
+          value={fullName}
           onChange={handleChangeText}
-          placeholder="Name Channel"
-          name="channelName"
-          value={channelName}
-        />
-        <Gap height={20} />
-        <TextArea
-          id="descriptionChannel"
-          onChange={handleChangeText}
-          placeholder="Description Channel"
-          name="description"
-          value={description}
         />
         <Gap height={30} />
         <Button
           title="Sign Up"
+          width="100%"
+          fontColor="#fff"
+          padding="10px 0"
+          fontSize="20px"
           onClick={handleRegister}
-          isLoading={isRegister ? true : false}
-          isDisabled={isRegister ? true : false}
         />
+        <Gap height={10} />
+        <p style={{ textAlign: 'left' }}>
+          Already have an account? Click{' '}
+          <strong onClick={props.onClickLogin} style={{ cursor: 'pointer' }}>
+            Here
+          </strong>{' '}
+        </p>
       </form>
     </div>
   )

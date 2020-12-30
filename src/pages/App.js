@@ -2,28 +2,30 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { useEffect, useContext } from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import notFound from '../pages/404'
+import Landing from '../pages/Landing'
+import Home from '../pages/Home'
+import Following from '../pages/Following'
+import Profile from '../pages/Profile'
+import Order from '../pages/Order'
+import Offer from '../pages/Offer'
+import Upload from '../pages/Upload'
+import Hire from '../pages/Hire'
+import DetailPost from '../pages/DetailPost'
+import DetailUser from '../pages/DetailUser'
+import DetailArt from '../pages/DetailArt'
+import EditProfile from '../pages/EditProfile'
+import SendProject from '../pages/SendProject'
+import ViewProject from '../pages/ViewProject'
+import { API, setAuthToken } from '../config/api'
 import { AppContext } from '../context/appContext'
 import PrivateRoute from '../components/Routes/privateRoute'
-import HomePage from './Homepage'
-import Landing from './Landing'
-import SubscribedPage from './SubscribtionPage'
-import MyChannelPage from './MyChannelPage'
-import DetailVideoPage from './DetailVideoPage'
-import ContentCreatorPage from './ContentCreatorPage'
-import AddVideo from './AddVideoPage'
-import EditChannel from './EditChannel'
-import notFound from './404'
-import ChannelsPage from './ChannelsPage'
-import WatchLaterPage from './WatchLaterPage'
-import EditVideoPage from './EditVideoPage'
-import ForgotPassword from './ForgotPasswordPage'
-import { API, setAuthToken } from '../config/api'
 
 if (localStorage.token) {
   setAuthToken(localStorage.token)
 }
 
-function App() {
+const App = () => {
   const [state, dispatch] = useContext(AppContext)
 
   const loadUser = async () => {
@@ -32,7 +34,7 @@ function App() {
 
       dispatch({
         type: 'USER_LOADED',
-        payload: response.data.data.channel,
+        payload: response.data.data.user,
       })
     } catch (err) {
       console.log(err)
@@ -42,31 +44,32 @@ function App() {
   useEffect(() => {
     loadUser()
   }, [])
-
   return (
     <div className="App">
       <Router>
         <Switch>
           <Route exact path="/" component={Landing} />
-          <Route exact path="/home" component={HomePage} />
-          <PrivateRoute exact path="/subscribed" component={SubscribedPage} />
-          <PrivateRoute exact path="/my-channel" component={MyChannelPage} />
-          <Route exact path="/detail-video/:id" component={DetailVideoPage} />
-          <Route
-            exact
-            path="/content-creator/:id"
-            component={ContentCreatorPage}
-          />
-          <PrivateRoute exact path="/add-video" component={AddVideo} />
+          <Route exact path="/home" component={Home} />
+          <PrivateRoute exact path="/following" component={Following} />
+          <PrivateRoute exact path="/profile" component={Profile} />
+          <PrivateRoute exact path="/order" component={Order} />
+          <PrivateRoute exact path="/offer" component={Offer} />
+          <PrivateRoute exact path="/upload" component={Upload} />
           <PrivateRoute
             exact
-            path="/edit-video/:id"
-            component={EditVideoPage}
+            path="/send-project/:id"
+            component={SendProject}
           />
-          <PrivateRoute exact path="/edit-channel" component={EditChannel} />
-          <PrivateRoute exact path="/watch-later" component={WatchLaterPage} />
-          <Route exact path="/channels" component={ChannelsPage} />
-          <Route exact path="/reset-password" component={ForgotPassword} />
+          <PrivateRoute
+            exact
+            path="/view-project/:id"
+            component={ViewProject}
+          />
+          <PrivateRoute exact path="/hire/:id" component={Hire} />
+          <Route exact path="/detail-post/:id" component={DetailPost} />
+          <Route exact path="/detail-user/:id" component={DetailUser} />
+          <Route exact path="/detail-art/:id" component={DetailArt} />
+          <PrivateRoute exact path="/edit-profile" component={EditProfile} />
           <Route component={notFound} />
         </Switch>
       </Router>

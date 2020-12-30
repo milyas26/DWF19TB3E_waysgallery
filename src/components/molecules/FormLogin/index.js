@@ -1,20 +1,13 @@
-// React Packages
 import { useContext, useState } from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { useHistory } from 'react-router-dom'
+import { API, setAuthToken } from '../../../config/api'
 import { AppContext } from '../../../context/appContext'
-
-// Components
 import Button from '../../atoms/Button'
 import Gap from '../../atoms/Gap'
 import Input from '../../atoms/Input'
-
-// API
-import { API, setAuthToken } from '../../../config/api'
-
-// CSS
 import './FormLogin.css'
 
-const FormLogin = () => {
+const FormLogin = (props) => {
   const [state, dispatch] = useContext(AppContext)
   const history = useHistory()
   const [formData, setFormData] = useState({
@@ -22,7 +15,6 @@ const FormLogin = () => {
     password: '',
   })
   const [invalidMessage, setInvalidMessage] = useState('')
-  const [isLogin, setIsLogin] = useState(false)
 
   const { email, password } = formData
 
@@ -35,7 +27,6 @@ const FormLogin = () => {
     e.preventDefault()
 
     try {
-      setIsLogin(true)
       const body = JSON.stringify({ email, password })
 
       const config = {
@@ -44,26 +35,24 @@ const FormLogin = () => {
         },
       }
       const response = await API.post('/login', body, config)
-
       dispatch({
         type: 'LOGIN',
-        payload: response.data.data.channel,
+        payload: response.data.data.user,
       })
 
-      setAuthToken(response.data.data.channel.token)
-      setIsLogin(false)
+      setAuthToken(response.data.data.user.token)
+
       history.push('/home')
     } catch (err) {
       console.log(err)
       setInvalidMessage(err.response.data.error.message)
-      setIsLogin(false)
     }
   }
 
   return (
     <div className="login">
       <form>
-        <h1 className="title">Sign In</h1>
+        <h1 className="title">Login</h1>
         <div className="error-login">
           <span style={{ display: invalidMessage ? '' : 'none' }}>
             {invalidMessage}
@@ -71,35 +60,36 @@ const FormLogin = () => {
         </div>
         <Input
           id="email"
-          onChange={handleChangeText}
           placeholder="Email"
-          value={email}
           name="email"
-          required
+          value={email}
+          onChange={handleChangeText}
         />
         <Gap height={20} />
         <Input
           id="password"
-          onChange={handleChangeText}
           placeholder="Password"
           type="password"
-          value={password}
           name="password"
-          required
+          value={password}
+          onChange={handleChangeText}
         />
-        <Gap height={10} />
-        <div className="forgot-password">
-          <Link to="/reset-password" className="link-reset-password">
-            <span>Forgot your password?</span>
-          </Link>
-        </div>
         <Gap height={30} />
         <Button
-          title="Sign In"
+          title="Login"
+          width="100%"
+          fontColor="#fff"
+          padding="10px 0"
+          fontSize="20px"
           onClick={handleLogin}
-          isLoading={isLogin ? true : false}
-          isDisabled={isLogin ? true : false}
         />
+        <Gap height={10} />
+        <p style={{ textAlign: 'left' }}>
+          Don't have an account? Click{' '}
+          <strong onClick={props.onClickRegister} style={{ cursor: 'pointer' }}>
+            Here
+          </strong>{' '}
+        </p>
       </form>
     </div>
   )

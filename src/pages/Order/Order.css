@@ -1,0 +1,51 @@
+.content .filter.order {
+  display: flex;
+  margin-bottom: 30px;
+  position: relative;
+  cursor: pointer;
+  width: 140px;
+}
+.content .filter.order span {
+  font-weight: 600;
+  font-size: 14px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  background-color: #e7e7e7;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.content .filter.order span i {
+  margin-left: 10px;
+}
+
+.content .table {
+  font-size: 14px;
+  font-weight: 500;
+  color: rgb(46, 45, 45);
+}
+
+.dropdown-bar {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 132px;
+  top: 42px;
+  cursor: pointer;
+}
+
+.dropdown-bar:hover {
+  background-color: greenyellow;
+}
+
+.filter.order .dropdown-bar span {
+  padding: 10px 20px;
+}
+
+.table thead th {
+  background-color: #e5e5e5;
+  border: 1px solid #828282;
+  height: 40px;
+  padding-bottom: 8px;
+}

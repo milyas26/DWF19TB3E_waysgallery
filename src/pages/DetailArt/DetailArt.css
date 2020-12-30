@@ -1,0 +1,14 @@
+.detail-art {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-art .back {
+  font-weight: 600;
+  cursor: pointer;
+  width: 59%;
+  text-align: left;
+}

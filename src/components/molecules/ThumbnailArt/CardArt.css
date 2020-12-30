@@ -1,0 +1,36 @@
+/* .cards .popup-wrapper-art {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper-art {
+  background-color: #000;
+  height: 100%;
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 20%;
+}
+
+.cards .pop-up-art {
+  background-color: #fff;
+  width: 660px;
+  position: absolute;
+  margin: auto;
+  padding: 20px 30px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.cards .pop-up .buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+} */

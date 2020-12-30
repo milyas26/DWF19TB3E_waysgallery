@@ -1,0 +1,77 @@
+.content-upload .edit-profile {
+  margin: 30px 50px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.content-upload .left .kotak-file {
+  border: 4px dotted #555;
+  height: 350px;
+  width: 450px;
+}
+
+.content-upload .left .kotak-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.content-upload .left .kotak-file i {
+  font-size: 100px;
+}
+
+.content-upload .left .kotak-file label {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-upload .right {
+  flex-direction: columns;
+}
+
+.content-upload .right .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+}
+.content-upload .right .avatar-file {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px dotted #555;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.content-upload .right .avatar-file label {
+  font-size: 60px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.content-upload .right .input-text {
+  width: 100%;
+}
+
+.content-upload .right .buttons {
+  display: flex;
+}
+
+.upload-wrapper {
+  display: flex;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.upload-wrapper img {
+  border: 3px dotted #555;
+  height: 80px;
+  width: 100px;
+  padding: 10px;
+}
